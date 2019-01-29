@@ -1,0 +1,27 @@
+body {
+  padding-bottom: 5rem;
+}
+
+header {
+  height: 15vh;
+  justify-content: center;
+  text-align: center;
+}
+.demo-layout-transparent {
+  background-color: rgb(63, 81, 181) center/ cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+
+h1 {
+  padding-top: 1em;
+  padding-left: 1rem;
+  color: White;
+}
+
+.demo-list-action {
+  width: 300px;
