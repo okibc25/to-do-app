@@ -4,8 +4,10 @@ function onReady() {
   const newToDoText = document.getElementById('newToDoText');
   const toDoList = document.getElementById('toDoList');
 
-   addToDoForm.addEventListener('submit',() => {
+   addToDoForm.addEventListener('submit', event => {
      event.preventDefault();
+
+     let title = newToDoText.value;
 
      let newLi = document.createElement('li');
      let checkbox = document.createElement('input');
@@ -14,19 +16,20 @@ function onReady() {
      let deleteBtn = document.createElement("button");
      deleteBtn.textContent = "Delete";
 
-     deleteBtn.addEventListener('click', function(event){
+     deleteBtn.addEventListener('click', function(event) {
         toDoList.removeChild(this.parentElement);
   });
 
      newLi.textContent = title;
      newLi.appendChild(checkbox);
-     newli.appendChild(deleteBtn);
      toDoList.appendChild(newLi);
      newToDoText.value = '';
-   });
+
+     newLi.appendChild(deleteBtn);
+  });
 };
 
 window.onload= function () {
-  alert("The window has loaded!");
+  alert("hi!");
   onReady();
 };
