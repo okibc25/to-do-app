@@ -23,5 +23,10 @@ h1 {
   color: White;
 }
 
+form {
+  padding-top: 2em;
+  padding-left: 2em;
+}
+
 .demo-list-action {
   width: 300px;
