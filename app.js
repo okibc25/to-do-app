@@ -1,7 +1,7 @@
 function onReady() {
-  const toDos = [];
-  let id = 0;
+  let toDos = [];
   const addToDoForm = document.getElementById('addToDoForm');
+  let id = 0;
 
   function renderTheUI(){
     const toDoList = document.getElementById('toDoList');
@@ -17,7 +17,7 @@ function onReady() {
 
        deleteBtn.addEventListener('click', event => {
        toDos = toDos.filter(function(item){
-         return item.id !== toDo.id;
+         return item.id != toDo.id;
        });
 
        renderTheUI();
